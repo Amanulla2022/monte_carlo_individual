@@ -1,0 +1,25 @@
+@media only screen and (max-width: 376px) {
+  .home-furnishing-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0px;
+  }
+
+  .home-furnishing-titles {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 360px;
+    justify-content: center;
+  }
+
+  .home-furnishing-sliding-img .banner-img {
+    content: url(https://www.montecarlo.in/cdn/shop/files/MHF01_Blanket.jpg?v=1698401771&width=1000);
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .blanket-image img {
+    content: url(https://www.montecarlo.in/cdn/shop/files/Mink_MB_d2dddf58-619a-468e-94d6-da31f681a53b.jpg?v=1698401840&width=1600);
+  }
+}

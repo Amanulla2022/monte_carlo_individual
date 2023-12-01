@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Brand For Men, Women & Kids - Monte Carlo</title>
+    <link rel="stylesheet" href="home-purnishing-main.css" />
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+    <section class="home-blankets-main">
+      <div class="path-navigation">
+        <div class="path-links">
+          <a href="home-purnishing-main.html" class="path-link-main">Home/</a>
+          <a href="home-purnishing-blankets.html" class="path-link-sub"
+            >Blankets</a
+          >
+        </div>
+
+        <div class="blanket-main-page-container">
+          <div class="blanket-main-title">
+            <h1>Blankets <span>(227 products)</span></h1>
+          </div>
+          <div class="blanket-main-filter">
+            <p>
+              Sort by <span> Date, new to old</span>
+              <img
+                src="images/down-up.png"
+                alt="down-up image"
+                class="icon-container"
+                onclick="toggleDropdown(this)"
+              />
+            </p>
+          </div>
+          <div class="drop-down-blanket">
+            <ul>
+              <li><span>Featured</span></li>
+              <li><span>Best Selling</span></li>
+              <li><span>Alphabetically, A-Z</span></li>
+              <li><span>Alphabetically, Z-A</span></li>
+              <li><span>Price, low to high</span></li>
+              <li><span>Price, high to low</span></li>
+              <li><span>Date, old to new</span></li>
+              <li><span>Date, new to old</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleDropdown(container) {
+        const dropdown = container
+          .closest(".blanket-main-page-container")
+          .querySelector(".drop-down-blanket");
+        if (dropdown) {
+          dropdown.classList.toggle("active");
+          console.log("hey");
+          container.classList.toggle("active");
+        }
+      }
+    </script>
+  </body>
+</html>

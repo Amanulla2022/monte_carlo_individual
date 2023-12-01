@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Brand For Men, Women & Kids - Monte Carlo</title>
+    <link rel="stylesheet" href="home-purnishing-main.css" />
+    <link rel="stylesheet" href="common.css" />
+  </head>
+  <body>
+    <!-- bedshhet page -->
+    <section class="home-bedsheets-main">
+      <div class="path-navigation">
+        <div class="path-links">
+          <a href="home-purnishing-main.html" class="path-link-main">Home/</a>
+          <a href="home-purnishing-bedsheets.html" class="path-link-sub"
+            >Bedsheets</a
+          >
+        </div>
+
+        <div class="bedsheet-main-page-container">
+          <div class="towel-main-title">
+            <h1>Bedsheets <span>(696 products)</span></h1>
+          </div>
+          <div class="bedsheet-main-filter">
+            <p>
+              Sort by <span> Date, new to old</span>
+              <img
+                src="images/down-up.png"
+                alt="down-up image"
+                class="icon-container"
+                onclick="toggleDropdown(this)"
+              />
+            </p>
+          </div>
+          <div class="drop-down-bedsheet">
+            <ul>
+              <li><span>Featured</span></li>
+              <li><span>Best Selling</span></li>
+              <li><span>Alphabetically, A-Z</span></li>
+              <li><span>Alphabetically, Z-A</span></li>
+              <li><span>Price, low to high</span></li>
+              <li><span>Price, high to low</span></li>
+              <li><span>Date, old to new</span></li>
+              <li><span>Date, new to old</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleDropdown(container) {
+        const dropdown = container
+          .closest(".bedsheet-main-page-container")
+          .querySelector(".drop-down-bedsheet");
+        if (dropdown) {
+          dropdown.classList.toggle("active");
+          container.classList.toggle("active");
+        }
+      }
+    </script>
+  </body>
+</html>
