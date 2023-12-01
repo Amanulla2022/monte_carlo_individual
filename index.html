@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Brand For Men, Women & Kids - Monte Carlo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- heading -->
+    <section class="home-furnishing">
+      <div class="home-furnishing-main">
+        <div class="home-furnishing-container">
+          <div class="home-furnishing-heading">Homes by Monte Carlo</div>
+          <div class="home-furnishing-titles">
+            <a href="#">Bedsheets</a>
+            <a href="#">Towles</a>
+            <a href="#" id="border-right-unstyle">Blankets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- banner images -->
+    <section class="home-furnishing-banner" id="image-container">
+      <!-- main banner -->
+      <div class="home-furnishing-sliding-img" id="slider-images">
+        <a href="#">
+          <img
+            class="banner-img"
+            src="https://www.montecarlo.in/cdn/shop/files/MB02_Blanket_9c4b492e-a94f-4846-9438-7204e727c7cc.jpg?v=1698304376&width=2000"
+            alt="Sliding Blanket Banner Image"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="banner-img"
+            src="https://www.montecarlo.in/cdn/shop/files/MB03_Towel_ebb29977-0246-4b76-9e0c-8a2fb0c3e52c.jpg?v=1698304375&width=2000"
+            alt="Sliding Towel Banner Image"
+          />
+        </a>
+        <a href="#">
+          <img
+            class="banner-img"
+            src="https://www.montecarlo.in/cdn/shop/files/MB01_Bedsheet_1ab20cdf-e8f4-4716-9629-82097c8be055.jpg?v=1698304376&width=2000"
+            alt="Sliding Bedshhet Banner Image"
+          />
+        </a>
+      </div>
+      <div class="next-prev">
+        <i class="fa fa-arrow-left" id="prev-btn" onclick="prevImage()"></i>
+        <i class="fa fa-arrow-right" id="next-btn" onclick="nextImage()"></i>
+      </div>
+
+      <div class="radio-btns">
+        <input type="radio" name="position" checked />
+
+        <input type="radio" name="position" />
+
+        <input type="radio" name="position" />
+      </div>
+    </section>
+    <!-- sub banner -->
+    <section class="home-furnishing-sub-banner">
+      <div class="home-furnishing-sub-banner-container">
+        <a href="#">
+          <img
+            src="https://www.montecarlo.in/cdn/shop/files/CT01_Bedsheet.jpg?v=1698238643&width=400"
+            alt="Sliding Bedshhet Sub-Banner Image"
+          />
+          <p class="sub-banner-text">Bedsheets</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://www.montecarlo.in/cdn/shop/files/CT01_Towel.jpg?v=1698238644&width=400"
+            alt="Sliding Towel Sub-Banner Image"
+          />
+          <p class="sub-banner-text">Towels</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://www.montecarlo.in/cdn/shop/files/CT01_Blanket.jpg?v=1698238644&width=400"
+            alt="Sliding Blanket Sub-Banner Image"
+          />
+          <p class="sub-banner-text">Blankets</p>
+        </a>
+      </div>
+      <!-- blanket image banner -->
+      <div class="blanket-image">
+        <a href="#">
+          <img
+            src="https://www.montecarlo.in/cdn/shop/files/Mink_Blankets.jpg?v=1698304376&width=2000"
+            alt="Blanket Image Large"
+          />
+        </a>
+      </div>
+      <!-- bedsheet image banner with desc -->
+      <div class="bedsheet-image-details">
+        <div class="bedsheet-image">
+          <a href="#">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/Bedroom_inspiration.jpg?v=1698239018&width=800"
+              alt="Bedsheet Image Large"
+            />
+          </a>
+        </div>
+        <div class="bedsheet-details">
+          <h3>A Bedroom Inspiration</h3>
+          <p>
+            Bed linen and cushions on the daybed are a great chance to show your
+            personal style. Here they have different textures, patterns, and
+            colours which are mixed and matched in a bold, edgy way. So they
+            enhance the classic look but in a dynamic way with a vibrant rhythm.
+          </p>
+          <a href="#">
+            <button class="shop-bedsheet">SHOP MORE BEDDING ---- &gt;</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- best seller -->
+    <section class="best-seller">
+      <div class="best-seller-main">
+        <div class="best-seller-heading">
+          <h2>Best Seller</h2>
+          <p>crowd pleasers that always delght</p>
+        </div>
+        <div class="best-seller-cards">
+          <div class="best-seller-card">
+            <a href="#">
+              <img
+                src="https://www.montecarlo.in/cdn/shop/products/23BL-SUPERIMO-04_3.jpg?v=1698823840&width=600"
+                alt="Blanket image-1"
+              />
+              <img
+                src="https://www.montecarlo.in/cdn/shop/products/23BL-SUPERIMO-04_2.jpg?v=1698823840&width=600"
+                alt="Blanket image-1"
+              />
+              <p>Printed Double Bed Blanket for Heavy ...</p>
+            </a>
+            <p>Rs. 11,649.00</p>
+            <a href="#">
+              <button class="add-to-cart-button">+ Add to Cart</button>
+            </a>
+          </div>
+          <div class="best-seller-card">
+            <a href="#">
+              <img
+                src="https://www.montecarlo.in/cdn/shop/products/23BB-POGO-07_1.jpg?v=1698819969&width=600"
+                alt="Blanket image-2"
+              />
+              <img
+                src="https://www.montecarlo.in/cdn/shop/products/23BB-POGO-07_2.jpg?v=1698819969&width=600"
+                alt="Blanket image-2"
+              />
+              <p>Printed Baby Blanket for Heavy Winter...</p>
+            </a>
+            <p>Rs. 829.00</p>
+            <a href="#">
+              <button class="add-to-cart-button">+ Add to Cart</button>
+            </a>
+          </div>
+          <div class="best-seller-card">
+            <a href="#">
+              <img
+                src="https://www.montecarlo.in/cdn/shop/products/23BB-POGO-04_1.jpg?v=1698819939&width=600"
+                alt="Blanket image-3"
+              />
+              <img
+                src="https://www.montecarlo.in/cdn/shop/products/23BB-POGO-04_2.jpg?v=1698819939&width=600"
+                alt="Blanket image-3"
+              />
+              <p>Printed Double Bed Blanket for Heavy Winter...</p>
+            </a>
+            <p>Rs. 829.00</p>
+            <a href="#">
+              <button class="add-to-cart-button">+ Add to Cart</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- luxury  -->
+      <div class="luxury-container">
+        <div class="luxury-details">
+          <h2>Meet Our Winter Luxury Range</h2>
+          <p>
+            Quality in every stitch. Since 1985. <br />
+            For more than 40 years, Monte Carlo has been perfecting the art of
+            crafting the softest and most plush blankets. With a legacy of more
+            than 4 decades, we follow an unparalleled commitment to quality and
+            craftsmanship. It is time to get into your comfort zone with India’s
+            most loved blanket brand.
+          </p>
+          <button class="shop-blanket">SHOP BLANKETS ----&gt;</button>
+        </div>
+        <div class="luxury-images">
+          <a href="#">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/Mask_group_9050f97f-9f04-4d19-881c-b4dc110fd7ef.png?v=1691089923&width=800"
+              alt="Sliding Bedshhet Sub-Banner Image"
+            />
+            <p>Mink Blankets</p>
+          </a>
+        </div>
+        <div class="luxury-images" id="give-me-padding">
+          <a href="#">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/Mask_group_36.png?v=1689790968&width=401"
+              alt="Sliding Towel Sub-Banner Image"
+            />
+            <p>Plush Comforters</p>
+          </a>
+          <button class="shop-now">Shop Now ------ &gt;</button>
+        </div>
+      </div>
+      <!-- shop gift card -->
+      <div class="shop-gift-card-container">
+        <div class="shop-gift-card">
+          <a href="#">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/Group_23154.png?v=1690032073&width=2000"
+              alt="Shop gift card image"
+            />
+            <button class="shop-now shop-gift-btn">
+              Shop Gift Card ------ &gt;
+            </button>
+          </a>
+        </div>
+        <div class="four-steps-container">
+          <div class="four-steps-title">
+            <h3>Four Steps To</h3>
+            <h2>Happiness</h2>
+          </div>
+          <div class="four-steps-div">
+            <div class="four-steps-details">
+              <img
+                class="free-delivery"
+                src="https://www.montecarlo.in/cdn/shop/files/delivery-truck_1_100x.png?v=1691090284"
+                alt="vehicle image"
+              />
+              <div class="individual-details">
+                <h3>Free Shipping</h3>
+                <h6>
+                  Free Worldwide Shipping And Returns - Customs And Duties Taxes
+                  Included
+                </h6>
+              </div>
+            </div>
+            <div class="four-steps-details">
+              <img src="./images/phone.png" alt="Phone image" />
+
+              <div class="individual-details">
+                <h3>Customer Service</h3>
+                <h6>
+                  We Are Available From Monday To Friday To Answer Your
+                  Questions.
+                </h6>
+              </div>
+            </div>
+            <div class="four-steps-details">
+              <img src="./images/lock.png" alt="Lock image" />
+              <div class="individual-details">
+                <h3>Secure Payment</h3>
+                <h6>Your Payment Information Is Processed Securely.</h6>
+              </div>
+            </div>
+            <div class="four-steps-details">
+              <img src="./images/mail.png" alt="Mail image" />
+              <div class="individual-details">
+                <h3>Contact Us</h3>
+                <h6>
+                  Need To Contact Us ? Just Send Us An E-Mail At
+                  Info@Montecarlo.In
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
