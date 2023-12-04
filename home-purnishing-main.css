@@ -217,8 +217,8 @@
 
 .best-seller-card a img {
   max-width: 100%;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 1rem;
+  border-radius: 0.25rem;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
 .best-seller-card a {
@@ -235,29 +235,25 @@
   color: #494343;
 }
 
-.best-seller-card:hover img {
-  transform: scale(1.01);
-}
-
 /* Hide the first image on hover */
-.best-seller-card:hover img:nth-child(1) {
+.hiding-image-div:hover img:nth-child(1) {
   display: none;
 }
 
 /* Initially hide the second image */
-.best-seller-card img:nth-child(2) {
+.hiding-image-div img:nth-child(2) {
   display: none;
 }
 
 /* Display the second image on hover */
-.best-seller-card:hover img:nth-child(2) {
+.hiding-image-div:hover img:nth-child(2) {
   display: block;
 }
 
 /* Initially hide the button */
 .add-to-cart-button {
   position: absolute;
-  bottom: 80px;
+  bottom: 90px;
   width: 95%;
   left: 50%;
   transform: translateX(-50%);
@@ -270,8 +266,37 @@
   display: none;
 }
 
+.coloured-span-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: rgb(198, 42, 42);
+  transform: translateX(-50%);
+}
+
+.wishlist-dropup {
+  position: absolute;
+  top: -50px;
+  right: -10px;
+  color: #fff !important;
+  background-color: #494343;
+  padding: 0.25rem;
+  font-weight: 400;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    63% 100%,
+    50% 75%,
+    0% 75%
+  );
+  padding-bottom: 1rem;
+  display: none;
+}
+
 /* Display the button on hover */
-.best-seller-card:hover .add-to-cart-button {
+.hiding-image-div:hover .add-to-cart-button {
   display: block;
 }
 
@@ -450,4 +475,17 @@ button {
   margin-top: 0.25rem;
   font-size: 0.75rem;
   color: #776f6f;
+}
+
+.sidebar {
+  width: 20%;
+  position: absolute;
+  height: 100vh;
+  background-color: #fff;
+  left: 0px;
+  margin-top: 3rem;
+  z-index: 9999;
+  /* 
+  position: sticky;
+  display: block; */
 }
