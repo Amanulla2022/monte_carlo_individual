@@ -64,7 +64,7 @@ const searchPopupconatiner = document.querySelector(".search-container-main");
 searchPopupBtn.addEventListener("click", () => {
   searchPopupconatiner.style.display = "block";
   document.body.style.overflow = "hidden";
-  // document.body.style.opacity = "0.5";
+  document.body.style.opacity = "0.5";
   overLay.style.opacity = "0.5";
   overLay.style.display = "block";
 });
@@ -92,7 +92,7 @@ const cartPopupcontainer = document.querySelector(".cartpopup-container-main");
 cartPopupBtn.addEventListener("click", () => {
   cartPopupcontainer.style.display = "block";
   document.body.style.overflow = "hidden";
-  // document.body.style.opacity = "0.5";
+  document.body.style.opacity = "0.5";
   overLayc.style.opacity = "0.5";
   overLayc.style.display = "block";
 });

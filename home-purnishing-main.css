@@ -52,6 +52,18 @@
   text-align: center;
 }
 
+/* .mobile-banner {
+  display: none;
+}
+
+.dekstop-banner {
+  display: none;
+} */
+
+.banner-img.active-banner-img {
+  display: block;
+}
+
 #prev-btn,
 #next-btn {
   position: absolute;
@@ -84,8 +96,9 @@
 }
 
 .home-furnishing-sub-banner-container {
-  max-width: 100%;
   display: flex;
+  width: 100%;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
 
@@ -107,6 +120,12 @@
   color: black;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.home-furnishing-banner-individual-image {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .home-furnishing-sub-banner-container a:hover .sub-banner-text {
@@ -477,15 +496,99 @@ button {
   color: #776f6f;
 }
 
+/* sidebar */
+
 .sidebar {
   width: 20%;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   background-color: #fff;
+  overflow-y: auto;
+
   left: 0px;
-  margin-top: 3rem;
+
   z-index: 9999;
+  display: block;
+  margin-top: 3rem;
+  padding: 3rem 2rem;
+  padding-bottom: 30%;
   /* 
   position: sticky;
   display: block; */
+}
+
+.sidebar-price,
+.price-range {
+  display: flex;
+  padding-top: 1.5rem;
+  cursor: pointer;
+}
+
+.sidebar-price {
+  justify-content: space-between;
+}
+
+.price-range {
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+
+.price-range .range {
+  width: 100%;
+}
+
+.from-to-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.price-range-from,
+.price-range-to {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  gap: 1.75rem;
+  padding-top: 1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 1rem;
+  border: 1px solid rgb(230, 230, 230);
+  width: 100%;
+}
+
+.sidebar-items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.price-number-from-input,
+.price-number-to-input {
+  width: 4rem;
+  border: none;
+}
+
+.price-range-from .rupees-span,
+.price-range-to .rupees-span {
+  color: #776f6f;
+  font-size: 1rem;
+}
+
+.sidebar-item-individual {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.sidebar-price h3,
+.sidebar-price span,
+.sidebar-item-individual h3,
+.sidebar-item-individual span {
+  color: rgb(22, 6, 127);
 }

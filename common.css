@@ -312,7 +312,7 @@
   background-color: #fff;
   display: none;
   transition: 0.5s;
-  z-index: 99999 !important;
+  z-index: 999999 !important;
 }
 
 .overlay {
@@ -388,6 +388,15 @@
   color: rgb(75, 74, 74);
 }
 
+.cart-close-button,
+.search-close-button {
+  cursor: pointer;
+}
+
 .search-container-content p span {
   padding: 0.25rem;
+}
+
+.home-furnishing-banner-mobileview {
+  display: none;
 }

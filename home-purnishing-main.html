@@ -34,13 +34,15 @@
       <div class="home-furnishing-sliding-img" id="slider-images">
         <a href="home-purnishing-blankets.html">
           <img
-            class="banner-img"
+            id="home-furnishing-banner1"
+            class="banner-img active-banner-img"
             src="https://www.montecarlo.in/cdn/shop/files/MB02_Blanket_9c4b492e-a94f-4846-9438-7204e727c7cc.jpg?v=1698304376&width=2000"
             alt="Sliding Blanket Banner Image"
           />
         </a>
         <a href="home-furnishing-towels.html">
           <img
+            id="home-furnishing-banner2"
             class="banner-img"
             src="https://www.montecarlo.in/cdn/shop/files/MB03_Towel_ebb29977-0246-4b76-9e0c-8a2fb0c3e52c.jpg?v=1698304375&width=2000"
             alt="Sliding Towel Banner Image"
@@ -48,6 +50,7 @@
         </a>
         <a href="home-purnishing-bedsheets.html">
           <img
+            id="home-furnishing-banner3"
             class="banner-img"
             src="https://www.montecarlo.in/cdn/shop/files/MB01_Bedsheet_1ab20cdf-e8f4-4716-9629-82097c8be055.jpg?v=1698304376&width=2000"
             alt="Sliding Bedsheet Banner Image"
@@ -72,37 +75,59 @@
       </div>
 
       <div class="radio-btns">
-        <input type="radio" name="position" checked />
+        <input
+          type="radio"
+          name="position"
+          id="radio1"
+          onclick="showImage(0)"
+          checked
+        />
 
-        <input type="radio" name="position" />
+        <input
+          type="radio"
+          name="position"
+          id="radio2"
+          onclick="showImage(1)"
+        />
 
-        <input type="radio" name="position" />
+        <input
+          type="radio"
+          name="position"
+          id="radio3"
+          onclick="showImage(2)"
+        />
       </div>
     </section>
     <!-- sub banner -->
     <section class="home-furnishing-sub-banner">
       <div class="home-furnishing-sub-banner-container">
-        <a href="home-purnishing-bedsheets.html">
-          <img
-            src="https://www.montecarlo.in/cdn/shop/files/CT01_Bedsheet.jpg?v=1698238643&width=400"
-            alt="Sliding Bedsheet Sub-Banner Image"
-          />
-          <p class="sub-banner-text">Bedsheets</p>
-        </a>
-        <a href="home-furnishing-towels.html">
-          <img
-            src="https://www.montecarlo.in/cdn/shop/files/CT01_Towel.jpg?v=1698238644&width=400"
-            alt="Sliding Towel Sub-Banner Image"
-          />
-          <p class="sub-banner-text">Towels</p>
-        </a>
-        <a href="home-purnishing-blankets.html">
-          <img
-            src="https://www.montecarlo.in/cdn/shop/files/CT01_Blanket.jpg?v=1698238644&width=400"
-            alt="Sliding Blanket Sub-Banner Image"
-          />
-          <p class="sub-banner-text">Blankets</p>
-        </a>
+        <div class="home-furnishing-banner-individual-image">
+          <a href="home-purnishing-bedsheets.html">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/CT01_Bedsheet.jpg?v=1698238643&width=400"
+              alt="Sliding Bedsheet Sub-Banner Image"
+            />
+            <p class="sub-banner-text">Bedsheets</p>
+          </a>
+        </div>
+        <div class="home-furnishing-banner-individual-image">
+          <a href="home-furnishing-towels.html">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/CT01_Towel.jpg?v=1698238644&width=400"
+              alt="Sliding Towel Sub-Banner Image"
+            />
+            <p class="sub-banner-text">Towels</p>
+          </a>
+        </div>
+        <div class="home-furnishing-banner-individual-image">
+          <a href="home-purnishing-blankets.html">
+            <img
+              src="https://www.montecarlo.in/cdn/shop/files/CT01_Blanket.jpg?v=1698238644&width=400"
+              alt="Sliding Blanket Sub-Banner Image"
+            />
+            <p class="sub-banner-text">Blankets</p>
+          </a>
+        </div>
       </div>
       <!-- blanket image banner -->
       <div class="blanket-image">
@@ -317,6 +342,23 @@
         </div>
       </div>
     </section>
+    <script>
+      window.onload = function () {
+        showImage(0);
+      };
+
+      function showImage(imageNumber) {
+        var images = document.getElementsByClassName("banner-img");
+        for (var i = 0; i < images.length; i++) {
+          images[i].classList.remove("active");
+        }
+        // Show the selected image
+        var selectedImage = document.getElementsByClassName(
+          "home-furnishing-banner" + imageNumber
+        );
+        selectedImage.classList.add("active-banner-img");
+      }
+    </script>
 
     <script src="script.js"></script>
   </body>

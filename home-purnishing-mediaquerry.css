@@ -12,14 +12,132 @@
     width: 360px;
     justify-content: center;
   }
-
-  .home-furnishing-sliding-img .banner-img {
-    content: url(https://www.montecarlo.in/cdn/shop/files/MHF01_Blanket.jpg?v=1698401771&width=1000);
-  }
 }
 
 @media only screen and (max-width: 769px) {
   .blanket-image img {
     content: url(https://www.montecarlo.in/cdn/shop/files/Mink_MB_d2dddf58-619a-468e-94d6-da31f681a53b.jpg?v=1698401840&width=1600);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-furnishing-banner
+    .home-furnishing-sliding-img
+    #home-furnishing-banner1 {
+    content: url(https://www.montecarlo.in/cdn/shop/files/MHF01_Blanket.jpg?v=1698401771&width=3000);
+  }
+
+  .home-furnishing-banner
+    .home-furnishing-sliding-img
+    #home-furnishing-banner2 {
+    content: url(https://www.montecarlo.in/cdn/shop/files/MHF03_Towel.jpg?v=1698401772&width=3000);
+  }
+
+  #home-furnishing-banner3 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-furnishing-banner-individual-image:nth-child(2) {
+    padding-left: 5rem;
+
+    width: auto;
+  }
+
+  .home-furnishing-banner-individual-image:nth-child(1) {
+    width: 100%;
+  }
+
+  .home-furnishing-banner-individual-image:nth-child(3) {
+    display: none;
+  }
+
+  .home-furnishing-sub-banner-container a img {
+    max-width: 100vh;
+  }
+
+  .bedsheet-image-details {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .bedsheet-image img {
+    width: auto;
+  }
+
+  .bedsheet-details {
+    margin-top: 2rem;
+    width: auto;
+  }
+
+  .luxury-container {
+    flex-direction: column-reverse;
+    aspect-ratio: 3/4;
+  }
+
+  .luxury-container img {
+    width: auto;
+  }
+  .shop-now {
+    position: relative;
+    bottom: 110px;
+    left: 35%;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    letter-spacing: 0px;
+    font-size: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .luxury-details {
+    margin-top: 2rem;
+    width: 50%;
+  }
+
+  .luxury-images {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .shop-gift-btn {
+    position: relative;
+    bottom: 110px;
+    left: 10%;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    letter-spacing: 0px;
+    font-size: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .four-steps-title {
+    padding-bottom: 12rem;
+  }
+
+  .four-steps-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+    grid-gap: 0px;
+    padding-left: 5rem;
+  }
+
+  .four-steps-div .four-steps-details {
+    box-sizing: border-box;
+    width: calc(50% - 1.5rem); /* Two items per row with 3rem gap in between */
+    margin-bottom: 3rem;
+  }
+
+  .individual-details h6 {
+    width: 8rem;
   }
 }
